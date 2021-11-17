@@ -1,0 +1,137 @@
+<body>
+  <div class="container">
+    <br />
+    <br />
+    <h1>¡Bienvenido/a! Esta es la pantalla de inicio.</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>Registro de usuario/a</h3>
+    <br />
+    <br />
+    <br />
+    <form>
+      <p>
+        <input
+          [(ngModel)]="usuario.nombre"
+          type="text"
+          placeholder="Introduce el nombre"
+          class="form-control"
+          name="nombre"
+          required
+        />
+      </p>
+
+      <p>
+        <input
+          type="text"
+          placeholder="Introduce tu apellido"
+          class="form-control"
+          name="apellido"
+          required
+        />
+      </p>
+
+      <p>
+        <input
+          type="text"
+          placeholder="¿Cuantos años tienes?"
+          class="form-control"
+          name="años"
+          required
+        />
+      </p>
+
+      <p>Selecciona la casa de Hogwarts que más te gusta</p>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="casa"
+          id="Gryffindor"
+        />
+        <label class="form-check-label" for="Gryffindor" text-align="left">
+          <span class="uno">Gryffindor</span>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="casa"
+          id="Hufflepuff"
+          checked
+        />
+        <label class="form-check-label" for="Hufflepuff">
+          <span class="dos"> Hufflepuff</span>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="casa"
+          id="Ravenclaw"
+          checked
+        />
+        <label class="form-check-label" for="Ravenclaw">
+          <span class="tres"> Ravenclaw</span>
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="casa"
+          id="Slytherin"
+          checked
+        />
+        <label class="form-check-label" for="Slytherin">
+          <span class="cuatro">Slytherin</span>
+        </label>
+      </div>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary" (click)="confirmar()">
+        Registrarse
+      </button>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div *ngIf="aparecer">
+
+  <h2>Hola <span class="cinco">{{usuario.nombre}}</span>, selecciona en el carrusel del abajo la opción que deseas jugar</h2>
+  <br >
+  <br >
+  <br>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <h4>Añadir preguntas</h4>
+      <br >
+      <br >
+      <a [routerLink]="['/nuevaspreguntas', usuario.nombre]">
+        <img class="rounded" src="../../assets/fondo/hp.jpg" alt="*" />
+      </a>
+    </ng-template>
+    <ng-template ngbSlide>
+      <h4>Editar preguntas ya añadidas</h4>
+      <br >
+      <br>
+      <a [routerLink]="['/listapreguntas', usuario.nombre]">
+        <img class="rounded" src="../../assets/fondo/sombrero.jpeg" alt="*" />
+      </a>
+    </ng-template>
+    <ng-template ngbSlide>
+      <h4>Jugar trivial</h4>
+      <br >
+      <br >
+      <a [routerLink]="['/elegirlibro', usuario.nombre]">
+        <img class="rounded" src="../../assets/fondo/trivialhp.jpg" alt="*" />
+      </a>
+    </ng-template>
+  </ngb-carousel>
+</div>
+</body>

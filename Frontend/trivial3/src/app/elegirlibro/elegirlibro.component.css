@@ -1,0 +1,11 @@
+img{
+  width: 600px;
+}
+body{
+  background-image:url("../../assets/fondo/wallpaper6.jpg");
+  text-align: center;
+
+  height:1000px;
+}h1{
+  color:aliceblue
+}

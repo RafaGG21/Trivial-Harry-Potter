@@ -1,0 +1,21 @@
+<body>
+  <h1>Editar preguntas</h1>
+  <br>
+  <br>
+  <br>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let pregunta of nuevaspreguntas" >
+    <p>{{ pregunta.pregunta }}</p>
+    <br />
+
+    <button>{{ pregunta.respuesta1 }}</button>
+    <button>{{ pregunta.respuesta2 }}</button>
+    <button>{{ pregunta.respuesta3 }}</button>
+    <button>{{ pregunta.respuesta4 }}</button>
+    <i class="bi-trash text-danger" (click)="confirmar(pregunta.id)"></i>
+  </li>
+  <br /><br />
+</ul>
+<a [routerLink]="['/indice']">De momento nada más 😉 ... Volver al índice</a>
+
+</body>

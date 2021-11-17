@@ -1,0 +1,84 @@
+
+img{
+  width: 400px;
+  height: 400px;
+}
+h1{
+  background-color:maroon;
+  text-align: center;
+  display: inline;
+  font-size: 24px;
+  border: 3px;
+  border-style: dotted;
+  padding: 12px;
+}
+h3{
+  background-color:darkkhaki;
+  text-align: center;
+  display: inline;
+  font-size: 24px;
+  border: 3px;
+  border-style: dotted;
+  padding: 12px;
+}
+body{
+  background-image:url("../../assets/fondo/tren.jpg");
+  text-align: center;
+  color: aliceblue;
+  height:1300px;
+}
+.uno{
+  color:red;
+  font-weight: bold;
+
+}
+.dos{
+  color: yellow;
+  font-weight: bold;
+}
+.tres{
+  color:darkslateblue;
+  font-weight: bold;
+}
+.cuatro{
+  color:green;
+  font-weight: bold;
+}
+
+h2{
+  background-color:cadetblue;
+    text-align: center;
+  display: inline;
+  font-size: 24px;
+  border: 3px;
+  border-style:dashed;
+  padding: 12px;
+  color:white;
+}
+p{
+  font-size: 24px;
+  text-decoration: underline;
+  font-weight: bold;
+  color:chocolate;
+}
+h4{
+  background-color:green;
+    text-align: center;
+  display: inline;
+  font-size: 18px;
+  border: 3px;
+  border-style:dashed;
+  padding: 12px;
+  color:lavender;
+}
+.cinco{
+  background-color:cadetblue;
+    text-align: center;
+  display: inline;
+  font-size: 24px;
+
+
+  padding: 12px;
+  color:black;
+
+}

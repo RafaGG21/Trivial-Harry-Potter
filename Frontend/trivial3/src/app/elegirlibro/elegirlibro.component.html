@@ -1,0 +1,26 @@
+
+<body>
+<h1>Selecciona una película para obtener preguntas</h1>
+  <div class="container text-center">
+<br>
+<ngb-carousel *ngIf="temas" class="carousel-dark">
+
+  <ng-template ngbSlide *ngFor="let tema of temas">
+
+    <a [routerLink]="['/preguntas', tema.tema,tema.year,usuario.nombre]">
+
+      <img class="rounded" [src]="tema.imagen" alt="*">
+
+      <div class="carousel-caption">
+
+        <h3 class="text-danger">{{tema.tema}}</h3>
+
+      </div>
+
+    </a>
+
+  </ng-template>
+
+</ngb-carousel>
+</div>
+</body>

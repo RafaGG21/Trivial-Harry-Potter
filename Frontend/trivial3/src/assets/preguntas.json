@@ -1,0 +1,81 @@
+[
+
+  {
+    "anyo":1,
+    "pregunta":"¿Qué día es el cumpleaños de Harry Potter?",
+    "respuestaCorrect":"A: 31 de Julio",
+    "respuestaIncorrecta1":"B: 21 de Agosto",
+    "respuestaIncorrecta2":"C: 21 de abril",
+    "respuestaIncorrecta3":"D: 12 de febrero"
+  },
+
+  {
+    "anyo":4,
+    "pregunta":"¿En qué país se escondió Voldemort hasta su resurrección en el 4º libro?",
+    "respuestaCorrect":"A: Albania",
+    "respuestaIncorrecta1":"B: Francia",
+    "respuestaIncorrecta2":"C: Inglaterra",
+    "respuestaIncorrecta3":"D: Gales"
+  },
+  {
+    "anyo":3,
+    "pregunta":"¿Quien le regala a Harry la Saeta de Fuego?",
+    "respuestaCorrect":"A: Sirius",
+    "respuestaIncorrecta1":"B: Dumbledore",
+    "respuestaIncorrecta2":"C: Hagrid",
+    "respuestaIncorrecta3":"D: McGonagall"
+  },
+  {
+    "anyo":5,
+    "pregunta":"¿Quien traiciona al ejercito de Dumbledore en Harry Potter y la Orden del Fenix?",
+    "respuestaCorrect":"A: Marieta Edgecombe",
+    "respuestaIncorrecta1":"B: Cho Chang",
+    "respuestaIncorrecta2":"C: Seamus Finnigan",
+    "respuestaIncorrecta3":"D: Dean Thomas"
+  },
+  {
+    "anyo":7,
+    "pregunta":"¿Quien se llevo el guardapelo de Slytherin de la cueva, antes que Harry  y Dumbledore?",
+    "respuestaCorrect":"A: Regulus Black",
+    "respuestaIncorrecta1":"B: Mundungus Fletcher",
+    "respuestaIncorrecta2":"C: Lucius Malfoy",
+    "respuestaIncorrecta3":"D: Sirius Black"
+  },
+  {
+    "anyo":7,
+    "pregunta":"¿Quien se llevo el guardapelo de Slytherin de la cueva, antes que Harry  y Dumbledore?",
+    "respuestaCorrect":"A: Regulus Black",
+    "respuestaIncorrecta1":"B: Mundungus Fletcher",
+    "respuestaIncorrecta2":"C: Lucius Malfoy",
+    "respuestaIncorrecta3":"D: Sirius Black"
+  },
+  {
+    "anyo":2,
+    "pregunta":"En la primera reunión del Club de Duelos, ¿Draco Malfoy convocó a qué animal con el hechizo 'Serpensortia'?",
+    "respuestaCorrect":"A: Serpiente",
+    "respuestaIncorrecta1":"B: Rana",
+    "respuestaIncorrecta2":"C: Dragon",
+    "respuestaIncorrecta3":"D: León"
+  },
+  {
+    "anyo":2,
+    "pregunta":"Gilderoy Lockhart intentó usar 'Brackium Emendo' para reparar los huesos rotos de Harry. ¿Qué le hizo realmente?",
+    "respuestaCorrect":"A: Volvió su pierna de madera",
+    "respuestaIncorrecta1":"B: Le quitó los huesos por completo",
+    "respuestaIncorrecta2":"C: Lo obligó a hablar pársel",
+    "respuestaIncorrecta3":"D: Le dio una voz exquisita para cantar"
+  },
+  {
+    "anyo":4,
+    "pregunta":"¿A que dragón se tiene que enfrentar Cedric Diggory en la primera prueba del Torneo de los Tres Magos?",
+    "respuestaCorrect":"A: Gales verde",
+    "respuestaIncorrecta1":"B: Colacuerno Hungaro",
+    "respuestaIncorrecta2":"C: Sueco Hozicorto",
+    "respuestaIncorrecta3":"D: Bola de Fuego Chino"
+
+  }
+
+
+]
+
+

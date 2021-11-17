@@ -1,0 +1,36 @@
+<body>
+  <br />
+  <br />
+  <br />
+
+    <div class="card text-center">
+      <div class="card-header">Fin del trivial</div>
+      <div class="card-body">
+        <h5 class="card-title">Resultados</h5>
+        <p class="card-text">
+          {{ usuario.nombre }} has acertado {{ contadorAciertos }} preguntas .
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="card text-center">
+      <div class="card-header">¿Cuanto sabes sobre Harry Potter?</div>
+      <div class="card-body">
+        <h5 class="card-title">Tu calificación es...</h5>
+        <p class="card-text">{{ calificacion }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <button class="btn btn-info">
+          <a [routerLink]="['/indice']">Volver a jugar </a>
+        </button>
+      </div>
+      <div class="col-6">
+        <button (click)="calificar()">Calificación</button>
+      </div>
+    </div>
+
+</body>

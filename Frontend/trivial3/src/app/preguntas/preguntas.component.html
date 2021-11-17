@@ -1,0 +1,101 @@
+<body>
+  <br>
+  <br>
+<h1>{{tema}}</h1>
+<br>
+<br>
+<br>
+<p><ngb-progressbar *ngIf="preguntas" type="success" [value]="tiempo" [max]="preguntas[preguntaActual].tiempo">{{ tiempo + ' / ' + preguntas[preguntaActual].tiempo + ' segundos.'}}</ngb-progressbar></p>
+<br>
+<br>
+<br>
+<h3 >Aciertos: {{contadorAciertos}}</h3>
+<br>
+<br>
+<br>
+<div class="card text-center my-4 mi-30 md-30">
+
+  <div class="card-header" [ngClass]="{'bg-success':respuestaCorrecta,'bg-danger':respuestaMala, 'bg-secondary':!respuestaCorrecta}">
+
+
+    <span *ngIf="respuestaCorrecta">Respuesta correcta :)</span>
+
+
+
+  </div>
+
+  <div class="card-body">
+
+    <h5 class="card-title">{{ preguntas[preguntaActual].Pregunta }}</h5>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <button  (click)="confirmarRespuesta1()" [disabled]="respuestaMala || respuestaCorrecta || this.tiempo==30" [ngClass]="{'btn-success':respuesta1correcta,'btn-primary':!respuesta1correcta,'btn-danger':respuestaMala1}">{{preguntas[preguntaActual].respuesta1}}</button>
+      </li>
+      <li class="list-group-item">
+        <button (click)="confirmarRespuesta2()" [disabled]="respuestaMala || respuestaCorrecta || this.tiempo==30" [ngClass]="{'btn-success':respuesta2correcta,'btn-secondary':!respuesta2correcta,'btn-danger':respuestaMala2}">{{preguntas[preguntaActual].respuesta2}}</button>
+     </li>
+     <li class="list-group-item">
+      <button (click)="confirmarRespuesta3()" [disabled]="respuestaMala || respuestaCorrecta|| this.tiempo==30" [ngClass]="{'btn-success':respuesta3correcta,'btn-warning':!respuesta3correcta,'btn-danger':respuestaMala3}">{{preguntas[preguntaActual].respuesta3}}</button>
+   </li>
+   <li class="list-group-item">
+    <button (click)="confirmarRespuesta4()" [disabled]="respuestaMala || respuestaCorrecta|| this.tiempo==30" [ngClass]="{'btn-success':respuesta4correcta,'btn-dark':!respuesta4correcta,'btn-danger':respuestaMala4}">{{preguntas[preguntaActual].respuesta4}}</button>
+ </li>
+
+    </ul>
+
+  </div>
+     <br>
+     <br>
+  <div class="card-footer text-muted" *ngIf="respuestaMala ">
+    <button class="btn btn-info" (click)="mostrarRespuesta()">
+     Saber respuesta correcta
+     </button>
+     <br>
+     <br>
+     <div class="alert alert-info" role="alert" *ngIf="mostrarRespuestaC">
+       La respuesta correcta es: {{preguntas[preguntaActual].respuestaCorrecta}}<br><br>
+     </div>
+
+
+   </div>
+
+
+  <div class="alert alert-success" role="alert" *ngIf="respuestaCorrecta && preguntas[preguntaActual] != preguntas[preguntas.length-1]">
+    ¡Muy bien! Puedes pasar a la siguiente pregunta
+  </div>
+
+  <div class="alert alert-danger" role="alert" *ngIf="respuestaMala && preguntas[preguntaActual] != preguntas[preguntas.length-1] ">
+
+     !Error! Más suerte en la próxima pregunta
+     <br>
+     <br>
+     <button class="btn btn-danger"  (click)="proximaPregunta()"  >Próxima pregunta
+    </button>
+ </div>
+<br>
+
+<div class="card-footer text-muted" *ngIf="this.tiempo==30 && !respuestaMala && !respuestaCorrecta">
+  ¡Se acabó el tiempo para responder! Pasa a la siguiente pregunta
+  <br>
+<button class="btn btn-info" *ngIf="this.tiempo==30 && !respuestaMala && !respuestaCorrecta" (click)="proximaPregunta()">Próxima pregunta
+</button>
+</div>
+  <div class="card-footer text-muted" *ngIf="respuestaCorrecta ">
+
+    <button class="btn btn-success"  (click)="proximaPregunta()">Próxima pregunta
+    </button>
+  </div>
+  <div class="card-footer text-muted" *ngIf="respuestaMala && preguntas[preguntaActual]==preguntas[preguntas.length-1] ||respuestaCorrecta&&preguntas[preguntaActual]==preguntas[preguntas.length-1]">
+
+    <button class="btn btn-info">
+      <a [routerLink]="['/resultados',contadorAciertos,usuario.nombre]">Resultados</a>
+    </button>
+  </div>
+
+
+
+
+</div>
+
+</body>
+

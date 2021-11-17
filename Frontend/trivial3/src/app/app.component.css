@@ -1,0 +1,19 @@
+
+h1{
+  background-image:url("../assets/fondo/escudos.jpg");
+  color: #d3d3d3;
+  width: 1650px;
+  border: 3px solid #ffd700;
+  border-radius: 10px;
+
+  display: block;
+  margin: 5px auto;
+  padding: 30px 10px;
+
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  font: 88px arial sans-serif;
+	text-align: center;
+}
+
+

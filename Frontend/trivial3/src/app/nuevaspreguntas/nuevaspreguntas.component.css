@@ -1,0 +1,11 @@
+body{
+  background-image:url("../../assets/fondo/wallpaper2.jpg");
+  text-align: center;
+  height: 800px;
+}
+h1{
+  text-align: center;
+  background-color: aliceblue;
+  padding: 10px;
+  display: inline;
+}

@@ -1,0 +1,97 @@
+<body>
+  <br />
+  <h1>Añade nuevas preguntas</h1>
+  <br />
+  <br />
+  <div class="container text-center">
+    <br />
+    <form
+      #formNuevasPreguntas="ngForm"
+      (ngSubmit)="formNuevasPreguntas.form.valid && postNuevasPreguntas()"
+    >
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.pregunta"
+          type="text"
+          placeholder="Introduce la pregunta"
+          class="form-control"
+          name="pregunta"
+          required
+        />
+      </p>
+      <br />
+      <br />
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.respuestacorrecta"
+          type="text"
+          placeholder="Introduce la respuesta que sería correcta"
+          class="form-control"
+          name="respuestacorrecta"
+          required
+        />
+      </p>
+      <br />
+      <br />
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.respuesta1"
+          type="text"
+          placeholder="Introduce la primera respuesta"
+          class="form-control"
+          name="respuesta1"
+          required
+        />
+      </p>
+      <br />
+      <br />
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.respuesta2"
+          type="text"
+          placeholder="Introduce la segunda respuesta"
+          class="form-control"
+          name="respuesta2"
+          required
+        />
+      </p>
+      <br />
+      <br />
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.respuesta3"
+          type="text"
+          placeholder="Introduce la tercera respuesta"
+          class="form-control"
+          name="respuesta3"
+          required
+        />
+      </p>
+      <br />
+      <br />
+      <p>
+        <input
+          [(ngModel)]="nuevaspreguntas.respuesta4"
+          type="text"
+          placeholder="Introduce la cuarta respuesta"
+          class="form-control"
+          name="respuesta4"
+          required
+        />
+      </p>
+
+        <button type="button" class="btn btn-warning" (click)="confirmar()">
+          Añadir
+        </button>
+
+    </form>
+    <br>
+
+      <button type="button"   class="btn btn-danger">
+        <a [routerLink]="['/nuevotrivial', usuario.nombre]"
+          >Comienza tu nuevo trivial
+        </a>
+      </button>
+    </div>
+
+</body>

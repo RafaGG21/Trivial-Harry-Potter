@@ -1,0 +1,38 @@
+body{
+  background-image:url("../../assets/fondo/wallpaper4.jpg");
+  text-align: center;
+
+  height:800px;
+}
+button, #result{
+  background-color: black;
+  color: #ffffff;
+  display: block;
+
+  width: 400px;
+  margin: 5px auto;
+  padding: 5px 10px;
+
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  font: 18px arial sans-serif;
+	text-align: center;
+}
+p{
+  background-color: goldenrod;
+  color: #ffffff;
+  display: block;
+
+  width: 400px;
+  margin: 5px auto;
+  padding: 5px 10px;
+
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  font: 18px arial sans-serif;
+	text-align: center;
+
+}
+h1{
+  color:wheat
+}
